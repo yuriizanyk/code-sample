@@ -1,0 +1,133 @@
+.fw-social-media-wrapper a {
+	display: inline-block;
+	position: relative;
+	width: 360px;
+	height: 360px;
+	margin-right: 10px;
+}
+.fw-social-media-wrapper a img,
+.fw-social-media-wrapper a svg {
+	max-width: 100%;
+	height: auto;
+	max-width: 200px;
+}
+
+
+
+/*
+* Flipp plates
+*/
+.flip-box-wrapper .flip-front-block, 
+.flip-box-wrapper .flip-back-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Front Block */
+.flip-box-wrapper .flip-front-block {
+	background: #eee;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	z-index: 2;
+	-webkit-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	transition: all .5s cubic-bezier(.5, .12, .46, .88);
+}
+.flip-box-wrapper .flip-front-block .flip-inner {
+	-webkit-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	-o-transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Back Block */
+.flip-box-wrapper .flip-back-block {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: #fff;
+    border: 1px solid #ffb200;
+    z-index: 1;
+	-webkit-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	transition: all .5s cubic-bezier(.5, .12, .46, .88);
+}
+.flip-box-wrapper .flip-back-block .flip-inner {
+	 -webkit-transform: translateZ(250px);
+	transform: translateZ(250px);
+	-webkit-transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+
+
+/* Hover */
+.flip-box-wrapper:hover .flip-front-block {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-webkit-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	transition: all .5s cubic-bezier(.5, .12, .46, .88);
+}
+.flip-box-wrapper:hover .flip-front-block .flip-inner {
+	-webkit-transform: translateZ(250px);
+	transform: translateZ(250px);
+	-webkit-transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	transition: all .4s cubic-bezier(.5, .12, .46, .88);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-box-wrapper:hover .flip-back-block {
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	-o-transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	transition: all .5s cubic-bezier(.5, .12, .46, .88);
+	z-index: 2;
+
+}
+.flip-box-wrapper:hover .flip-back-block .flip-inner {
+	-webkit-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	-o-transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	transition: all .4s cubic-bezier(.5, .12, .46, .88) .2s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
