@@ -5,11 +5,11 @@
 * Add Custom Cronjob Schedule (how ofter you need to run the cronjob)
 */
 
-function zd_add_cron_interval( $schedules ) {
+function wcl_add_cron_interval( $schedules ) {
 
-    if( !isset($schedules['zd_every_30_min']) ){
-        $schedules['zd_every_30_min'] = array(
-            'interval' => 30, // 60 * 30, // 30 min
+    if( !isset($schedules['wcl_every_30_min']) ){
+        $schedules['wcl_every_30_min'] = array(
+            'interval' => 1800, // 60 * 30, // 30 min
             'display'  => __( 'Every 30 min' )
         );
     }
@@ -17,7 +17,7 @@ function zd_add_cron_interval( $schedules ) {
 
 }
 
-add_filter( 'cron_schedules', 'zd_add_cron_interval' );
+add_filter( 'cron_schedules', 'wcl_add_cron_interval' );
 
 
 
@@ -28,8 +28,8 @@ add_filter( 'cron_schedules', 'zd_add_cron_interval' );
 /*
 * Schedule event (custom cronjob function within created schedule) 
 */
-if ( ! wp_next_scheduled( 'zd_parse_tweeter_data_cronjob' ) ) {
-    wp_schedule_event( time(), 'zd_every_30_min', 'zd_parse_tweeter_data_cronjob' );
+if ( ! wp_next_scheduled( 'wcl_function_cronjob' ) ) {
+    wp_schedule_event( time(), 'wcl_every_30_min', 'wcl_function_cronjob' );
 }
 
 
@@ -42,12 +42,12 @@ if ( ! wp_next_scheduled( 'zd_parse_tweeter_data_cronjob' ) ) {
 * Cronjob Function
 */
 
-function zd_parse_tweeter_data_cronjob () {
+function wcl_function_cronjob () {
 
     // Something happens here
 
 }
 
-add_action( 'zd_parse_tweeter_data_cronjob', 'zd_parse_tweeter_data_cronjob' );
+add_action( 'wcl_function_cronjob', 'wcl_function_cronjob' );
 
 
