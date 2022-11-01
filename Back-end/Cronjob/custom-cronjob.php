@@ -2,6 +2,14 @@
 
 
 /*
+* Cron Job Documentation - https://developer.wordpress.org/plugins/cron/
+*/
+
+
+
+
+
+/*
 * Add Custom Cronjob Schedule (how ofter you need to run the cronjob)
 */
 
