@@ -1,12 +1,20 @@
 
+<?php
+	$button = get_sub_field('button');
+?>
 
 
 <!-- ================================================ -->
 <!-- Basic HTML structure of a button -->
 <!-- ================================================ -->
 
+<?php 
+	if( !empty($button['title']) ) {
+		$button_target = $button['target'] ? ' target="' . $button['target'] . '"' : '';
+	}
+?>
 <div class="zd-button-wrapper">
-	<a href="#" class="zd-button">Button Text</a>
+	<a href="<?php esc_url( $button['url'] ) ?>" class="zd-button"<?php echo $button_target; ?>><?php echo $button['title']; ?></a>
 </div>
 
 <style>
@@ -18,9 +26,9 @@
 		display: inline-block; 
 		cursor: pointer;
 		outline: 0;
-		-webkit-transition: VALUE .25s ease-in-out;
-		-o-transition: VALUE .25s ease-in-out;
-		transition: VALUE .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
 
 		/* Often Used */
 		padding: Xpx Ypx;
