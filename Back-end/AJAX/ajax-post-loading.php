@@ -121,18 +121,17 @@ if ($the_query->have_posts()) {
 
 
 			// Set Variables 
-			let page = 1;
 			let is_load_more = false;
 			let blog_wrapper = element.closest('.wcl-blog-wrapper');
 			let load_more_button = blog_wrapper.querySelector('.wcl-load-more-button');
 			let posts_wrapper = blog_wrapper.querySelector('.wcl-blog-posts-wrapper');
 			let posts_cat = element.dataset.cat;
+			let page = parseInt(blog_wrapper.dataset.page) + 1;
 
 			if( posts_cat === undefined ) {
 				
 				// "Load more" link click 
 				is_load_more = true;
-				page = parseInt(blog_wrapper.dataset.page) + 1;
 				posts_cat = blog_wrapper.dataset.cat;
 
 			}
