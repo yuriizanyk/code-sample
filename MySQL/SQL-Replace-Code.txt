@@ -1,0 +1,12 @@
+
+UPDATE wp_options SET option_value = replace(option_value, 'old_url_no_slash', 'new_url_no_slash') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = replace( guid, 'old_url_no_slash', 'new_url_no_slash' );
+
+UPDATE wp_posts SET post_content = replace( post_content, 'old_url_no_slash', 'new_url_no_slash' );
+
+UPDATE wp_posts SET pinged = replace( post_content, 'old_url_no_slash', 'new_url_no_slash' );
+
+UPDATE wp_postmeta SET meta_value = replace( meta_value, 'old_url_no_slash', 'new_url_no_slash' );
+
+UPDATE wp_yoast_seo_links SET url = replace( url, 'old_url_no_slash', 'new_url_no_slash' );
