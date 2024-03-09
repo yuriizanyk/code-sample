@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'wcl-tryamentor-icon';
+	src: url('../fonts/wcl-tryamentor-icon.eot?mqnq3o');
+	src:
+		url('../fonts/wcl-tryamentor-icon.eot?mqnq3o#iefix') format('embedded-opentype'),
+		url('../fonts/wcl-tryamentor-icon.ttf?mqnq3o') format('truetype'),
+		url('../fonts/wcl-tryamentor-icon.woff?mqnq3o') format('woff'),
+		url('../fonts/wcl-tryamentor-icon.svg?mqnq3o#wcl-tryamentor-icon') format('svg');
+
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+i,
+.wcl-icon {
+	text-transform: none;
+
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'wcl-tryamentor-icon' !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	speak: never;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wcl-tryamentor-clock::before {
+	content: '\e90f';
+}
+
+.wcl-tryamentor-microphone::before {
+	content: '\e900';
+}
+
+.wcl-tryamentor-minus::before {
+	content: '\e901';
+}
+
+.wcl-tryamentor-phone::before {
+	content: '\e902';
+}
+
+.wcl-tryamentor-plus::before {
+	content: '\e903';
+}
+
+.wcl-tryamentor-plus-alt::before {
+	content: '\e904';
+}
+
+.wcl-tryamentor-arrow-down::before {
+	content: '\e905';
+}
+
+.wcl-tryamentor-arrow-down-alt::before {
+	content: '\e906';
+}
+
+.wcl-tryamentor-arrow-left-alt::before {
+	content: '\e907';
+}
+
+.wcl-tryamentor-arrow-right::before {
+	content: '\e908';
+}
+
+.wcl-tryamentor-arrow-right-alt::before {
+	content: '\e909';
+}
+
+.wcl-tryamentor-facebook::before {
+	content: '\e90a';
+}
+
+.wcl-tryamentor-instagram::before {
+	content: '\e90b';
+}
+
+.wcl-tryamentor-linkedin1::before {
+	content: '\e90c';
+}
+
+.wcl-tryamentor-microphone1::before {
+	content: '\e90d';
+}
+
+.wcl-tryamentor-twitter::before {
+	content: '\e90e';
+}

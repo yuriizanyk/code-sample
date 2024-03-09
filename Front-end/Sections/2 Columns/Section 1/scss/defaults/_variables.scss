@@ -1,0 +1,81 @@
+/*
+==============================================
+    CONTENT OF THE FILE
+==============================================
+
+    1. Fonts
+    2. Variables
+
+*/
+
+
+
+
+
+/*
+* 1. Fonts
+*/
+
+@font-face {
+	font-family: 'Rany';
+	src: url('../fonts/RanyMedium.eot');
+	src:
+		url('../fonts/RanyMedium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RanyMedium.woff2') format('woff2'),
+		url('../fonts/RanyMedium.woff') format('woff'),
+		url('../fonts/RanyMedium.ttf') format('truetype'),
+		url('../fonts/RanyMedium.svg#RanyMedium') format('svg');
+
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rany';
+	src: url('../fonts/RanyBold.eot');
+	src:
+		url('../fonts/RanyBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RanyBold.woff2') format('woff2'),
+		url('../fonts/RanyBold.woff') format('woff'),
+		url('../fonts/RanyBold.ttf') format('truetype'),
+		url('../fonts/RanyBold.svg#RanyBold') format('svg');
+
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rany';
+	src: url('../fonts/RanyRegular.eot');
+	src:
+		url('../fonts/RanyRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RanyRegular.woff2') format('woff2'),
+		url('../fonts/RanyRegular.woff') format('woff'),
+		url('../fonts/RanyRegular.ttf') format('truetype'),
+		url('../fonts/RanyRegular.svg#RanyRegular') format('svg');
+
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+$poppins-font: 'Poppins', sans-serif;
+$rany-font: 'Rany', sans-serif;
+
+
+
+
+
+
+/*
+* 2. Variables
+*/
+
+$black: #000;
+$grey: #9f9f9f;
+$black_pearl: #061f29;
+
+$transition: all .25s ease-in-out;

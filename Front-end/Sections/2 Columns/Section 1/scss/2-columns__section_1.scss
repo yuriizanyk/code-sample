@@ -1,0 +1,147 @@
+
+
+@import 'defaults/reset';
+@import 'defaults/variables';
+@import 'defaults/general';
+
+
+.wcl-section-banner {
+	padding: 100px 0 0;
+
+	@media only screen and (max-width: 991px) {
+		padding: 80px 0;
+	}
+
+	@media only screen and (max-width: 576px) {
+		padding-top: 20px;
+	}
+
+	.wcl-row {
+		row-gap: 40px;
+		column-gap: 40px;
+
+		@media only screen and (max-width: 991px) {
+			flex-direction: column;
+		}
+	}
+
+	.wcl-col-1 {
+		width: 100%;
+		max-width: calc(55% - 20px);
+
+		@media only screen and (max-width: 1280px) {
+			max-width: calc(60% - 20px);
+		}
+
+		@media only screen and (max-width: 991px) {
+			max-width: 100%;
+		}
+	}
+
+	.wcl-col-2 {
+		width: 100%;
+		max-width: calc(45% - 20px);
+
+		@media only screen and (max-width: 1280px) {
+			max-width: calc(40% - 20px);
+		}
+
+		@media only screen and (max-width: 991px) {
+			max-width: 100%;
+		}
+	}
+
+	.data-content {
+		margin-bottom: 75px;
+
+		@media only screen and (max-width: 1024px) {
+			margin-bottom: 0;
+		}
+	}
+
+	.data-title {
+		position: relative;
+
+		color: $black;
+
+		font-family: $rany-font;
+		font-size: 56px;
+		font-weight: 700;
+		line-height: 1.05;
+
+		@media only screen and (max-width: 1280px) {
+			font-size: 52px;
+		}
+
+		@media only screen and (max-width: 1152px) {
+			font-size: 48px;
+		}
+
+		@media only screen and (max-width: 576px) {
+			font-size: 45px;
+		}
+
+		@media only screen and (max-width: 425px) {
+			font-size: 40px;
+		}
+
+		&::before {
+			position: absolute;
+			z-index: -1;
+			top: -30px;
+			left: 0;
+
+			display: block;
+
+			width: 209px;
+			height: 120px;
+
+			content: '';
+
+			background: url('../img/highlight.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			@media only screen and (max-width: 1152px) {
+				top: -25px;
+
+				width: 180px;
+				height: 100px;
+			}
+
+			@media only screen and (max-width: 576px) {
+				width: 160px;
+				height: 90px;
+			}
+
+			@media only screen and (max-width: 425px) {
+				top: -15px;
+				left: -10px;
+
+				width: 136px;
+				height: 77.74px;
+			}
+		}
+	}
+
+	.data-description {
+		color: $grey;
+
+		font-family: $poppins-font;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.wcl-down-btn {
+		margin-bottom: -32px;
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	.wcl-image-holder {
+		@media only screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+}

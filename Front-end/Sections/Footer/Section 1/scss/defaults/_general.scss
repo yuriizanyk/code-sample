@@ -1,0 +1,204 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+
+	font-family: $poppins-font;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+html.overflow-hidden,
+body.overflow-hidden {
+	overflow: hidden;
+}
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+p,
+ul,
+ol {
+	margin-bottom: 20px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a {
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+.wcl-body-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 100vh;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+}
+
+.wcl-section {
+	position: relative;
+}
+
+.wcl-section-title {
+	color: $black_pearl;
+
+	font-family: $rany-font;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.15;
+
+	@media only screen and (max-width: 768px) {
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 1.05;
+	}
+}
+
+.wcl-container {
+	width: 100%;
+	max-width: 1260px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.wcl-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+h1,
+.wcl-h1,
+h2,
+.wcl-h2,
+h3,
+.wcl-h3,
+h4,
+.wcl-h4,
+h5,
+.wcl-h5,
+h6,
+.wcl-h6 {
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+h1,
+.wcl-h1 {
+	font-size: 42px;
+}
+
+h2,
+.wcl-h2 {
+	font-size: 38px;
+}
+
+h3,
+.wcl-h3 {
+	font-size: 34px;
+}
+
+h4,
+.wcl-h4 {
+	font-size: 30px;
+}
+
+h5,
+.wcl-h5 {
+	font-size: 26px;
+}
+
+h6,
+.wcl-h6 {
+	font-size: 22px;
+}
+
+.disable-scroll {
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	width: 100%;
+	height: 100vh;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+
+	font: inherit;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul,
+ol {
+	padding-left: 20px;
+}
+
+.error {
+	color: #ed2024;
+	border-color: #ed2024;
+}
+
+.success {
+	color: #3c9b37;
+	border-color: #3c9b37;
+}
+
+
+
+
+
+/*
+* Responsive Design
+*/
+@media only screen and (max-width: 768px) {
+
+	.wcl-container {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+}

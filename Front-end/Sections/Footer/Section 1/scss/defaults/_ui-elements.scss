@@ -1,0 +1,133 @@
+/*
+==============================================
+    CONTENT OF THE FILE
+==============================================
+
+    1. Buttons
+    2. Form Elements
+    ...
+
+*/
+
+
+
+/*
+* 1. Buttons
+*/
+.wcl-button-wrapper {
+
+	.wcl-button {
+		display: inline-block;
+
+		padding: 18px 38px;
+
+		cursor: pointer;
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+
+		text-decoration: none;
+
+		color: #1d1d1d;
+
+		border-radius: 16px;
+
+		outline: 0;
+
+		background: $white;
+
+		font-family: $rany-font;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1;
+
+		&:hover {
+			background: #f5deb3;
+		}
+	}
+
+	&.button-orange {
+		.wcl-button {
+			color: $white;
+
+			background: $orange;
+
+			&:hover {
+				background: darken($orange, 15%);
+			}
+		}
+	}
+}
+
+.wcl-round-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 64px;
+	height: 64px;
+
+	cursor: pointer;
+
+	color: $white;
+	border: none;
+	border-radius: 100%;
+	outline: 0;
+	background: $black_pearl;
+
+	&:hover {
+		background: lighten($black_pearl, 10%);
+	}
+
+	.wcl-icon {
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+/*
+* 2. Form Elements
+*/
+.wcl-form-wrapper {
+
+	input {}
+
+	textarea {}
+}
+
+
+
+
+/*
+* 3. Social network
+*/
+
+.wcl-social {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+
+	.data-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 34px;
+		height: 34px;
+
+		border: 1px solid rgba($white, .1);
+		border-radius: 100%;
+
+		&:hover {
+			color: $orange;
+			border-color: $orange;
+		}
+
+		.wcl-icon {
+			font-size: 12px;
+		}
+	}
+}

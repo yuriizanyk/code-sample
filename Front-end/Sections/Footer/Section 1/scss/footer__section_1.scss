@@ -1,0 +1,160 @@
+
+
+@import 'defaults/reset';
+@import 'defaults/variables';
+@import 'defaults/general';
+@import 'defaults/icon-font';
+@import 'defaults/ui-elements';
+
+
+
+#wcl-main-footer {
+	padding: 50px 0 18px 0;
+	// padding: 55px 0 18px 0;
+
+	color: $white;
+	background: $black_pearl;
+
+	@media only screen and (max-width: 1280px) {
+		padding-top: 200px;
+	}
+
+	@media only screen and (max-width: 991px) {
+		padding-top: 200px;
+		// padding-top: 40px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding-top: 100px;
+	}
+
+	.data-top {
+		margin-bottom: 65px;
+
+		@media only screen and (max-width: 1280px) {
+			margin-bottom: 24px;
+		}
+
+		.wcl-row {
+			@media only screen and (max-width: 991px) {
+				align-items: start;
+				flex-direction: column;
+				row-gap: 50px;
+			}
+
+			@media only screen and (max-width: 576px) {
+				row-gap: 45px;
+			}
+		}
+
+		.wcl-col-1 {
+			margin-right: 120px;
+			max-width: 46px;
+
+			@media only screen and (max-width: 1280px) {
+				margin-right: 0;
+			}
+
+			@media only screen and (max-width: 991px) {
+				max-width: 110px;
+			}
+
+		}
+
+		.wcl-logo {
+			display: none;
+
+			@media only screen and (max-width: 991px) {
+				display: block;
+			}
+		}
+
+		.wcl-alt-logo {
+			@media only screen and (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+
+	.data-bottom {
+		.wcl-row {
+			@media only screen and (max-width: 991px) {
+				align-items: start;
+				flex-direction: column;
+				row-gap: 16px;
+			}
+		}
+
+		.data-copyright {
+			font-family: $poppins-font;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		.menu-list {
+			display: flex;
+			align-items: center;
+			column-gap: 16px;
+
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+			}
+
+			a {
+				font-family: $poppins-font;
+				font-size: 14px;
+				line-height: 1.8;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+}
+
+
+
+.wcl-footer-menu {
+	.menu-list {
+		display: grid;
+
+		margin: 0;
+		padding: 0;
+		grid-template-columns: repeat(3, auto);
+		column-gap: 100px;
+		row-gap: 16px;
+
+		@media only screen and (max-width: 1152px) {
+			column-gap: 60px;
+		}
+
+		@media only screen and (max-width: 425px) {
+			column-gap: 30px;
+		}
+
+		li {
+			width: fit-content;
+
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+
+			color: inherit;
+
+			font-family: $poppins-font;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1.5;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+}
